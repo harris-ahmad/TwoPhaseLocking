@@ -162,6 +162,7 @@ func (t *Transaction) GetPhase() Phase{
 	defer t.mu.Unlock()
 	return t.phase
 }
+
 func (t *Transaction) String() string {
 	t.mu.Lock()
 	defer t.mu.Unlock()
